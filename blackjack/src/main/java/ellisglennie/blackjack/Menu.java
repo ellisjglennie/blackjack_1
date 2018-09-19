@@ -56,7 +56,6 @@ public class Menu {
         //System.out.print("Enter your cards and (optional) commands to stand/hit: ");
 
 
-
         input = getCards();
 		
 

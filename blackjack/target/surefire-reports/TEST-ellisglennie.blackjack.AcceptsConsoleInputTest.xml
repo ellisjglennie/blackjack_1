@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ellisglennie.blackjack.AcceptsFileInputTest" time="0.002" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ellisglennie.blackjack.AcceptsConsoleInputTest" time="5.342" tests="3" errors="0" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,7 +60,25 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testIfFileEmpty" classname="ellisglennie.blackjack.AcceptsFileInputTest" time="0"/>
-  <testcase name="testIfFileGiven" classname="ellisglennie.blackjack.AcceptsFileInputTest" time="0"/>
-  <testcase name="testIfFileOpens" classname="ellisglennie.blackjack.AcceptsFileInputTest" time="0"/>
+  <testcase name="testIfConsoleAcceptsInput" classname="ellisglennie.blackjack.AcceptsConsoleInputTest" time="2.741">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at ellisglennie.blackjack.AcceptsConsoleInputTest.testIfConsoleAcceptsInput(AcceptsConsoleInputTest.java:15)
+</failure>
+    <system-out><![CDATA[Invalid file. Try again.
+]]></system-out>
+  </testcase>
+  <testcase name="testConsoleReading" classname="ellisglennie.blackjack.AcceptsConsoleInputTest" time="2.093">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at ellisglennie.blackjack.AcceptsConsoleInputTest.testConsoleReading(AcceptsConsoleInputTest.java:22)
+</failure>
+    <system-out><![CDATA[Invalid file. Try again.
+]]></system-out>
+  </testcase>
+  <testcase name="testInputEmpty" classname="ellisglennie.blackjack.AcceptsConsoleInputTest" time="0.181">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at ellisglennie.blackjack.AcceptsConsoleInputTest.testInputEmpty(AcceptsConsoleInputTest.java:29)
+</failure>
+    <system-out><![CDATA[Invalid file. Try again.
+]]></system-out>
+  </testcase>
 </testsuite>
