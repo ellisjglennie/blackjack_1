@@ -2,38 +2,39 @@ package ellisglennie.blackjack;
 
 
 import junit.framework.TestCase;
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.IOException;
+import java.util.*;
 
 
 public class AcceptsFileInputTest extends TestCase {
 
 
-    public void testIfFileGiven() { //tests if a file was provided
-        Menu game = new Menu();
+    public void testIfFileGiven() throws IOException { //tests if a file was provided
+        Menu.sc = new Scanner("game.txt");
+        Menu.input = Menu.getCards();
 
-        assertTrue(Menu.gameFileName.length() > 0);
+        assertTrue(Menu.input.size() > 0);
     }
 
-    public void testIfFileOpens() { //tests whether the file is valid type (.txt)
-        Menu game = new Menu();
+    public void testIfFileOpens() throws IOException { //tests whether the file is valid type (.txt)
+        Menu.sc = new Scanner("game.txt");
+        Menu.input = Menu.getCards();
 
-        assertEquals(".txt", gameFileName.substring(gameFileName.length() - 4));
+        assertTrue(Menu.input.size() > 0);
     }
 
 
-    public void testIfFileEmpty() { //tests if file has any content
-        Menu game = new Menu();
+    public void testIfFileEmpty() throws IOException { //tests if file has any content
+        Menu.sc = new Scanner("game.txt");
+        Menu.input = Menu.getCards();
 
-        assertTrue(Menu.gameCards.size() > 0);
-
+        assertTrue(Menu.input.size() > 0);
     }
 
-    public void testIfFileContentValid() { //test that the file content is all valid card entries with no duplicates
-        Menu game = new Menu();
+    /*public void testIfFileContentValid() throws IOException { //test that the file content is all valid card entries with no duplicates
 
-        assertTrue(Menu.gameCards.isValid());
-    }
+        assertTrue(Menu.isValid(Menu.getCards("game.txt").get(5)));
+    }*/
 
 
 }

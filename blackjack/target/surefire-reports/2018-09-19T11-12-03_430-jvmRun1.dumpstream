@@ -1,0 +1,44 @@
+# Created on 2018-09-19T11:12:37.646
+[SUREFIRE] std/in stream corrupted
+java.io.IOException: Command NOOP unexpectedly read Void data with length 4.
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:130)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2018-09-19T14:28:15.747
+Unexpected IOException with stream: Invalid file.
+
+
+# Created on 2018-09-19T14:28:15.787
+Unexpected IOException: 7,1,ellisglennie.blackjack.AcceptsFileInputTest,testIfFileContentValid(ellisglennie.blackjack.AcceptsFileInputTest),null,null,null,null,AcceptsFileInputTest.testIfFileContentValid:36 NullPointer,java.lang.NullPointerException\000A\0009at ellisglennie.blackjack.AcceptsFileInputTest.testIfFileContentValid(AcceptsFileInputTest.java:36)\000A
+
+
+# Created on 2018-09-19T14:28:15.833
+Unexpected IOException: 5,1,ellisglennie.blackjack.AcceptsFileInputTest,testIfFileEmpty(ellisglennie.blackjack.AcceptsFileInputTest),null,null,null
+
+
+# Created on 2018-09-19T14:28:15.876
+Unexpected IOException: 7,1,ellisglennie.blackjack.AcceptsFileInputTest,testIfFileEmpty(ellisglennie.blackjack.AcceptsFileInputTest),null,No line found,null,No line found,AcceptsFileInputTest.testIfFileEmpty:29 \00BB NoSuchElement No line found,java.util.NoSuchElementException: No line found\000A\0009at ellisglennie.blackjack.AcceptsFileInputTest.testIfFileEmpty(AcceptsFileInputTest.java:29)\000A
+
+
+# Created on 2018-09-19T14:28:15.912
+Unexpected IOException: 5,1,ellisglennie.blackjack.AcceptsFileInputTest,testIfFileGiven(ellisglennie.blackjack.AcceptsFileInputTest),null,null,null
+
+
+# Created on 2018-09-19T14:28:15.936
+Unexpected IOException: 7,1,ellisglennie.blackjack.AcceptsFileInputTest,testIfFileGiven(ellisglennie.blackjack.AcceptsFileInputTest),null,No line found,null,No line found,AcceptsFileInputTest.testIfFileGiven:16 \00BB NoSuchElement No line found,java.util.NoSuchElementException: No line found\000A\0009at ellisglennie.blackjack.AcceptsFileInputTest.testIfFileGiven(AcceptsFileInputTest.java:16)\000A
+
+
+# Created on 2018-09-19T14:28:15.946
+Unexpected IOException: 5,1,ellisglennie.blackjack.AcceptsFileInputTest,testIfFileOpens(ellisglennie.blackjack.AcceptsFileInputTest),null,null,null
+
+
+# Created on 2018-09-19T14:28:15.987
+Unexpected IOException: 7,1,ellisglennie.blackjack.AcceptsFileInputTest,testIfFileOpens(ellisglennie.blackjack.AcceptsFileInputTest),null,No line found,null,No line found,AcceptsFileInputTest.testIfFileOpens:22 \00BB NoSuchElement No line found,java.util.NoSuchElementException: No line found\000A\0009at ellisglennie.blackjack.AcceptsFileInputTest.testIfFileOpens(AcceptsFileInputTest.java:22)\000A
+
+
+# Created on 2018-09-19T14:28:16.026
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,ellisglennie.blackjack.AcceptsFileInputTest,null,null,null
+
+
