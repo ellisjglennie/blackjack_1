@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ellisglennie.blackjack.AcceptsFileInputTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.372 s <<< FAILURE! - in ellisglennie.blackjack.AcceptsFileInputTest
-testIfFileEmpty(ellisglennie.blackjack.AcceptsFileInputTest)  Time elapsed: 0.031 s  <<< FAILURE!
-junit.framework.AssertionFailedError
-	at ellisglennie.blackjack.AcceptsFileInputTest.testIfFileEmpty(AcceptsFileInputTest.java:31)
-
-testIfFileGiven(ellisglennie.blackjack.AcceptsFileInputTest)  Time elapsed: 0 s  <<< FAILURE!
-junit.framework.AssertionFailedError
-	at ellisglennie.blackjack.AcceptsFileInputTest.testIfFileGiven(AcceptsFileInputTest.java:16)
-
-testIfFileOpens(ellisglennie.blackjack.AcceptsFileInputTest)  Time elapsed: 0.003 s  <<< FAILURE!
-junit.framework.AssertionFailedError
-	at ellisglennie.blackjack.AcceptsFileInputTest.testIfFileOpens(AcceptsFileInputTest.java:23)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.982 s - in ellisglennie.blackjack.AcceptsFileInputTest

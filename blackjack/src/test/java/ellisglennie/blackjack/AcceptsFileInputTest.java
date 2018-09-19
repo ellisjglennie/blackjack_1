@@ -23,7 +23,6 @@ public class AcceptsFileInputTest extends TestCase {
         assertTrue(Menu.input.size() > 0);
     }
 
-
     public void testIfFileEmpty() throws IOException { //tests if file has any content
         Menu.sc = new Scanner("game.txt");
         Menu.input = Menu.getCards();
@@ -31,10 +30,6 @@ public class AcceptsFileInputTest extends TestCase {
         assertTrue(Menu.input.size() > 0);
     }
 
-    /*public void testIfFileContentValid() throws IOException { //test that the file content is all valid card entries with no duplicates
-
-        assertTrue(Menu.isValid(Menu.getCards("game.txt").get(5)));
-    }*/
 
 
 }
