@@ -31,6 +31,4 @@ public class AcceptsFileInputTest extends TestCase {
     }
 
 
-
-
 }
