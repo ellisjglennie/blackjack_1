@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ellisglennie.blackjack.AcceptsConsoleInputTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 5.342 s <<< FAILURE! - in ellisglennie.blackjack.AcceptsConsoleInputTest
-testIfConsoleAcceptsInput(ellisglennie.blackjack.AcceptsConsoleInputTest)  Time elapsed: 2.741 s  <<< FAILURE!
-junit.framework.AssertionFailedError
-	at ellisglennie.blackjack.AcceptsConsoleInputTest.testIfConsoleAcceptsInput(AcceptsConsoleInputTest.java:15)
-
-testConsoleReading(ellisglennie.blackjack.AcceptsConsoleInputTest)  Time elapsed: 2.093 s  <<< FAILURE!
-junit.framework.AssertionFailedError
-	at ellisglennie.blackjack.AcceptsConsoleInputTest.testConsoleReading(AcceptsConsoleInputTest.java:22)
-
-testInputEmpty(ellisglennie.blackjack.AcceptsConsoleInputTest)  Time elapsed: 0.181 s  <<< FAILURE!
-junit.framework.AssertionFailedError
-	at ellisglennie.blackjack.AcceptsConsoleInputTest.testInputEmpty(AcceptsConsoleInputTest.java:29)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 s - in ellisglennie.blackjack.AcceptsConsoleInputTest

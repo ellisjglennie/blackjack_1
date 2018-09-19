@@ -9,28 +9,31 @@ import java.io.*;
 public class Menu {
     protected static Scanner sc = new Scanner(System.in);
     protected static ArrayList<String> input = new ArrayList<>();
+    protected static String mode = "";
 	
 
     public static ArrayList<String> getCards() { //tests if a file was provided and if it is .txt
-        ArrayList<String> c = new ArrayList<>();
         String f = "";
-
+        ArrayList<String> c = new ArrayList<>();
         while (true) {
             f = sc.nextLine();
 
             c = getGameContent(f);
             if (c != null) {
-                return c;
+                boolean pass = isValid(c);
+                if (pass) { 
+                    return c;
+                }
             }
             System.out.println("Invalid file. Try again.");
         }
-    }
 
+    }
 
     public static ArrayList<String> getGameContent(String fileName) {
         try {
-            String r = new String(Files.readAllBytes(Paths.get(fileName)));
-            ArrayList<String> c = new ArrayList<>(Arrays.asList(r.split(" ")));
+            fileName = new String(Files.readAllBytes(Paths.get(fileName)));
+            ArrayList<String> c = new ArrayList<>(Arrays.asList(fileName.split(" ")));
 
             if (c.size() > 0) {
                 return c;
@@ -43,20 +46,54 @@ public class Menu {
         }
     }
 
+    public static boolean isValid(ArrayList<String> c) {
+        for (String item : c) {
+            if (item.length() == 3) {
+                Card thisCard = new Card(Character.toString(item.charAt(0)), item.substring(-2));
+                if (thisCard.getRank() == -1 || thisCard.getSuit() == -1) {
+                    return false;
+                }
+            }
+            else if (item.length() == 2) { //testing card validity
+                Card thisCard = new Card(Character.toString(item.charAt(0)), Character.toString(item.charAt(1)));
+				if (thisCard.getRank() == -1 || thisCard.getSuit() == -1) {
+                    return false;
+                }
+            } else if (item.length() == 1) { //testing command validity
+                if (!item.equals("H") && !item.equals("S")) {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
+
+
+
+
 
     public static void main(String[] args) {
 		
-        //System.out.print("Welcome to Blackjack. Select file input (f) or console input (c): ");
-
-        //Right now i'm not implementing the options, just checking to see if it will read file input.
-        //Assume f is chosen.
+        System.out.print("Welcome to Blackjack. /n Select file input (f) or console input (c): ");
 
         System.out.print("Enter the name of a .txt file in your current folder: ");
 
-        //System.out.print("Enter your cards and (optional) commands to stand/hit: ");
-
-
+        
         input = getCards();
+        
+
+
+
+
+
+
+
+        
 		
 
 
