@@ -1,10 +1,11 @@
 package ellisglennie.blackjack;
 
-
 import java.util.*;
 
+
+
 public interface Player {
-    Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
     //return name
     String getName();

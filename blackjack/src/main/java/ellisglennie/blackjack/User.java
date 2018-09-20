@@ -6,8 +6,9 @@ import java.util.*;
 
 public class User implements Player {
     private ArrayList<Card> hand = new ArrayList<>();
-    protected static Scanner sc = new Scanner(System.in);
     private String name;
+    Scanner sc = new Scanner(System.in);
+    
 
     public String getName() { return name; }
 

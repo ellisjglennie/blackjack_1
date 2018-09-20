@@ -50,7 +50,18 @@ public class Dealer implements Player {
     public int getHand() { 
         int total = 0;
         for (Card card : hand) {
-            total += card.getValue();
+            if (card.getRank() != 0) {
+                total += card.getValue();
+            }
+        }
+        for (Card card: hand) {
+            if (card.getRank() == 0) {
+                if ((total + 11) <= 21) {
+                    total += 11;
+                } else {
+                    total += 1;
+                }
+            }
         }
         return total;
      }

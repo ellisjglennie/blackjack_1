@@ -33,6 +33,14 @@ public class AcesRunTest extends TestCase {
 
     }
 
+    public void testSoftSeventeen() {
+        User n = new User();
+        n.setHand(new Card[]{new Card("D", "A"), new Card(2, 6)});
+
+        assertFalse(Menu.game.getPlayers()[1].standing());
+
+    }
+
 
 
 
