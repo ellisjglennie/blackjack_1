@@ -76,7 +76,6 @@ public class Game {
     }
 
     public boolean checkBJ(Player[] players) {
-        for (int i=0; i<players.length; i++) 
         if (players[0].getHand() > 21) {
             System.out.println("User has a score of " + players[0].getHand() + " and busts. Dealer wins.");
             return true;

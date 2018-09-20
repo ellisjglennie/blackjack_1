@@ -37,5 +37,13 @@ public class GameEndTest extends TestCase {
 
     }
 
+    public void testBlackjack() { //test to see if anyone has a blackjack. if both have blackjack, dealer wins.
+        Menu.game.getPlayers()[0].setHand(new Card[]{new Card(1, 10), new Card("D", "A")});
+        assertTrue(Menu.game.checkBJ(Menu.game.getPlayers()));
+
+        Menu.game.getPlayers()[1].setHand(new Card[]{new Card(1, 10), new Card("D", "A")});
+        assertTrue(Menu.game.checkBJ(Menu.game.getPlayers()));
+    }
+
 
 }
