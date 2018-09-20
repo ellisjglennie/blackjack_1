@@ -45,5 +45,18 @@ public class GameEndTest extends TestCase {
         assertTrue(Menu.game.checkBJ(Menu.game.getPlayers()));
     }
 
+    public void testScoreWin() {
+        Menu.game.getPlayers()[0].setHand(new Card[]{new Card(1, 9), new Card(1, 10)});
+        Menu.game.getPlayers()[1].setHand(new Card[]{new Card(1, 4), new Card(1, 9)});
+
+        assertEquals(0, Menu.game.compareScore(Menu.game.getPlayers()));
+
+        Menu.game.getPlayers()[0].setHand(new Card[]{new Card(2, 9), new Card(2, 10)});
+        Menu.game.getPlayers()[1].setHand(new Card[]{new Card(1, 9), new Card(1, 10)});
+
+        assertEquals(1, Menu.game.compareScore(Menu.game.getPlayers()));
+
+    }
+
 
 }
