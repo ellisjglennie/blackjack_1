@@ -3,7 +3,7 @@ package ellisglennie.blackjack;
 import junit.framework.TestCase;
 
 
-public class CreatesCorrectDeck extends TestCase {
+public class CreatesCorrectDeckTest extends TestCase {
 
 
     public void testDeckHas52Cards() {

@@ -10,6 +10,24 @@ public class Menu {
     protected static Scanner sc = new Scanner(System.in);
     protected static ArrayList<String> input = new ArrayList<>();
     protected static String mode = "";
+
+    public static void main(String[] args) {
+		
+        System.out.print("Welcome to Blackjack. /n Select file input (f) or console input (c): ");
+
+        System.out.print("Enter the name of a .txt file in your current folder: ");
+
+        
+        input = getCards();
+        
+
+		
+
+
+
+    }
+
+
 	
 
     public static ArrayList<String> getCards() { //tests if a file was provided and if it is .txt
@@ -27,7 +45,6 @@ public class Menu {
             }
             System.out.println("Invalid file. Try again.");
         }
-
     }
 
     public static ArrayList<String> getGameContent(String fileName) {
@@ -72,33 +89,6 @@ public class Menu {
 
 
 
-
-
-
-
-
-    public static void main(String[] args) {
-		
-        System.out.print("Welcome to Blackjack. /n Select file input (f) or console input (c): ");
-
-        System.out.print("Enter the name of a .txt file in your current folder: ");
-
-        
-        input = getCards();
-        
-
-
-
-
-
-
-
-        
-		
-
-
-
-    }
 
 
 
