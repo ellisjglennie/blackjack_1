@@ -26,7 +26,11 @@ public class Dealer implements Player {
     //prints out the player's hand at the beginning of the game
     @Override
     public int showHand() {
-        System.out.println("Dealer reveals their " + hand.get(1).toString() + ".");
+        System.out.print("Dealer has: ");
+        for (int i=1; i<hand.size(); i++) { 
+            System.out.print(" " + hand.get(i).toString());
+        }
+        System.out.println(", and one face-down card.\n");
         return 0;
     }
 

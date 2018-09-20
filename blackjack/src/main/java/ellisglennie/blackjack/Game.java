@@ -40,6 +40,8 @@ public class Game {
         constant prompts to the user, and complete access to a shuffled deck.
     */
     public void run() {
+        int turn = 0;
+        int swap = -1;
         //draws hands for user and dealer
         players[0].draw(deck);
         players[0].draw(deck);
@@ -50,9 +52,30 @@ public class Game {
         players[0].showHand();
         players[1].showHand();
 
+        while (true) {
+            //check for blackjack!
+
+            players[turn].startTurn();
+            if (players[turn].standing()) {
+                players[turn].showHand();
+                turn += 1;
+            } else {
+                System.out.println("Testing.");
+                players[turn].draw(deck);
+                players[turn].showHand();
+            }
+
+
+        }
+
+
+
     
 
     }
+
+
+ 
 
 
 

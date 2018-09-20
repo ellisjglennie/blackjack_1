@@ -4,6 +4,7 @@ package ellisglennie.blackjack;
 import java.util.*;
 
 public interface Player {
+    Scanner sc = new Scanner(System.in);
 
     
     //draw both at the beginning and throughout the game
