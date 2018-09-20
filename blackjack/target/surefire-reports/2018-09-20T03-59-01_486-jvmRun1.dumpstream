@@ -1,0 +1,344 @@
+# Created on 2018-09-20T03:59:34.411
+[SUREFIRE] std/in stream corrupted
+java.io.IOException: Command NOOP unexpectedly read Void data with length 4.
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:130)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2018-09-20T03:59:57.163
+Unexpected IOException with stream: Dealer has: 
+
+# Created on 2018-09-20T03:59:57.164
+Unexpected IOException with stream:  Ten of Diamonds
+
+# Created on 2018-09-20T03:59:57.166
+Unexpected IOException with stream:  Jack of Hearts
+
+# Created on 2018-09-20T03:59:57.168
+Unexpected IOException with stream:  Five of Clubs
+
+# Created on 2018-09-20T03:59:57.169
+Unexpected IOException with stream: , and one face-down card.
+
+
+
+# Created on 2018-09-20T03:59:57.171
+Unexpected IOException with stream: User has a score of 26 and busts. Dealer wins.
+
+
+# Created on 2018-09-20T03:59:57.172
+Unexpected IOException with stream: User has a score of 29 and busts. Dealer wins.
+
+
+# Created on 2018-09-20T03:59:57.174
+Unexpected IOException with stream: User has a score of 29 and busts. Dealer wins.
+
+
+# Created on 2018-09-20T03:59:57.176
+Unexpected IOException: 6,1,blackjack.GameEndTest,testBust(blackjack.GameEndTest),null,null,null
+
+
+# Created on 2018-09-20T03:59:57.177
+Unexpected IOException: 5,1,blackjack.GameEndTest,testDealerHit(blackjack.GameEndTest),null,null,null
+
+
+# Created on 2018-09-20T03:59:57.179
+Unexpected IOException with stream: You drew a Two of Diamonds.
+
+
+# Created on 2018-09-20T03:59:57.180
+Unexpected IOException with stream: You drew a Ace of Diamonds.
+
+
+# Created on 2018-09-20T03:59:57.182
+Unexpected IOException with stream: Dealer draws.
+
+
+# Created on 2018-09-20T03:59:57.183
+Unexpected IOException with stream: Dealer draws.
+
+
+# Created on 2018-09-20T03:59:57.185
+Unexpected IOException with stream: The game has begun.
+
+
+# Created on 2018-09-20T03:59:57.186
+Unexpected IOException with stream: You have the following cards: 
+
+# Created on 2018-09-20T03:59:57.188
+Unexpected IOException with stream:  Jack of Diamonds
+
+# Created on 2018-09-20T03:59:57.191
+Unexpected IOException with stream:  Jack of Hearts
+
+# Created on 2018-09-20T03:59:57.192
+Unexpected IOException with stream:  Ten of Spades
+
+# Created on 2018-09-20T03:59:57.193
+Unexpected IOException with stream:  Two of Diamonds
+
+# Created on 2018-09-20T03:59:57.195
+Unexpected IOException with stream:  Ace of Diamonds
+
+# Created on 2018-09-20T03:59:57.196
+Unexpected IOException with stream: .
+
+
+
+# Created on 2018-09-20T03:59:57.197
+Unexpected IOException with stream: Dealer has: 
+
+# Created on 2018-09-20T03:59:57.199
+Unexpected IOException with stream:  Jack of Hearts
+
+# Created on 2018-09-20T03:59:57.200
+Unexpected IOException with stream:  Ten of Spades
+
+# Created on 2018-09-20T03:59:57.202
+Unexpected IOException with stream:  Five of Spades
+
+# Created on 2018-09-20T03:59:57.204
+Unexpected IOException with stream:  Five of Diamonds
+
+# Created on 2018-09-20T03:59:57.205
+Unexpected IOException with stream: , and one face-down card.
+
+
+
+# Created on 2018-09-20T03:59:57.207
+Unexpected IOException with stream: User has a score of 31 and busts. Dealer wins.
+
+
+# Created on 2018-09-20T03:59:57.208
+Unexpected IOException: 6,1,blackjack.GameEndTest,testDealerHit(blackjack.GameEndTest),null,null,null
+
+
+# Created on 2018-09-20T03:59:57.211
+Unexpected IOException: 5,1,blackjack.GameEndTest,testDealerHitAgain(blackjack.GameEndTest),null,null,null
+
+
+# Created on 2018-09-20T03:59:57.212
+Unexpected IOException with stream: You drew a King of Diamonds.
+
+
+# Created on 2018-09-20T03:59:57.214
+Unexpected IOException with stream: You drew a Four of Diamonds.
+
+
+# Created on 2018-09-20T03:59:57.216
+Unexpected IOException with stream: Dealer draws.
+
+
+# Created on 2018-09-20T03:59:57.218
+Unexpected IOException with stream: Dealer draws.
+
+
+# Created on 2018-09-20T03:59:57.219
+Unexpected IOException with stream: The game has begun.
+
+
+# Created on 2018-09-20T03:59:57.222
+Unexpected IOException with stream: You have the following cards: 
+
+# Created on 2018-09-20T03:59:57.224
+Unexpected IOException with stream:  Jack of Diamonds
+
+# Created on 2018-09-20T03:59:57.226
+Unexpected IOException with stream:  Jack of Hearts
+
+# Created on 2018-09-20T03:59:57.255
+Unexpected IOException with stream:  Ten of Spades
+
+# Created on 2018-09-20T03:59:57.262
+Unexpected IOException with stream:  Two of Diamonds
+
+# Created on 2018-09-20T03:59:57.263
+Unexpected IOException with stream:  Ace of Diamonds
+
+# Created on 2018-09-20T03:59:57.266
+Unexpected IOException with stream:  King of Diamonds
+
+# Created on 2018-09-20T03:59:57.268
+Unexpected IOException with stream:  Four of Diamonds
+
+# Created on 2018-09-20T03:59:57.285
+Unexpected IOException with stream: .
+
+
+
+# Created on 2018-09-20T03:59:57.309
+Unexpected IOException with stream: Dealer has: 
+
+# Created on 2018-09-20T03:59:57.317
+Unexpected IOException with stream:  Seven of Hearts
+
+# Created on 2018-09-20T03:59:57.321
+Unexpected IOException with stream:  Ten of Hearts
+
+# Created on 2018-09-20T03:59:57.336
+Unexpected IOException with stream:  Three of Diamonds
+
+# Created on 2018-09-20T03:59:57.339
+Unexpected IOException with stream: , and one face-down card.
+
+
+
+# Created on 2018-09-20T03:59:57.341
+Unexpected IOException with stream: User has a score of 44 and busts. Dealer wins.
+
+
+# Created on 2018-09-20T03:59:57.344
+Unexpected IOException: 6,1,blackjack.GameEndTest,testDealerHitAgain(blackjack.GameEndTest),null,null,null
+
+
+# Created on 2018-09-20T03:59:57.352
+Unexpected IOException: 5,1,blackjack.GameEndTest,testDisplayHand(blackjack.GameEndTest),null,null,null
+
+
+# Created on 2018-09-20T03:59:57.354
+Unexpected IOException with stream: You drew a Six of Diamonds.
+
+
+# Created on 2018-09-20T03:59:57.357
+Unexpected IOException with stream: You drew a Two of Hearts.
+
+
+# Created on 2018-09-20T03:59:57.377
+Unexpected IOException with stream: Dealer draws.
+
+
+# Created on 2018-09-20T03:59:57.390
+Unexpected IOException with stream: Dealer draws.
+
+
+# Created on 2018-09-20T03:59:57.392
+Unexpected IOException with stream: The game has begun.
+
+
+# Created on 2018-09-20T03:59:57.407
+Unexpected IOException with stream: You have the following cards: 
+
+# Created on 2018-09-20T03:59:57.417
+Unexpected IOException with stream:  Jack of Diamonds
+
+# Created on 2018-09-20T03:59:57.428
+Unexpected IOException with stream:  Jack of Hearts
+
+# Created on 2018-09-20T03:59:57.431
+Unexpected IOException with stream:  Ten of Spades
+
+# Created on 2018-09-20T03:59:57.434
+Unexpected IOException with stream:  Two of Diamonds
+
+# Created on 2018-09-20T03:59:57.440
+Unexpected IOException with stream:  Ace of Diamonds
+
+# Created on 2018-09-20T03:59:57.444
+Unexpected IOException with stream:  King of Diamonds
+
+# Created on 2018-09-20T03:59:57.456
+Unexpected IOException with stream:  Four of Diamonds
+
+# Created on 2018-09-20T03:59:57.486
+Unexpected IOException with stream:  Six of Diamonds
+
+# Created on 2018-09-20T03:59:57.490
+Unexpected IOException with stream:  Two of Hearts
+
+# Created on 2018-09-20T03:59:57.493
+Unexpected IOException with stream: .
+
+
+
+# Created on 2018-09-20T03:59:57.501
+Unexpected IOException with stream: Dealer has: 
+
+# Created on 2018-09-20T03:59:57.506
+Unexpected IOException with stream:  Queen of Spades
+
+# Created on 2018-09-20T03:59:57.508
+Unexpected IOException with stream:  King of Clubs
+
+# Created on 2018-09-20T03:59:57.511
+Unexpected IOException with stream: , and one face-down card.
+
+
+
+# Created on 2018-09-20T03:59:57.513
+Unexpected IOException with stream: User has a score of 50 and busts. Dealer wins.
+
+
+# Created on 2018-09-20T03:59:57.515
+Unexpected IOException with stream: You have the following cards: 
+
+# Created on 2018-09-20T03:59:57.532
+Unexpected IOException with stream:  Jack of Diamonds
+
+# Created on 2018-09-20T03:59:57.535
+Unexpected IOException with stream:  Jack of Hearts
+
+# Created on 2018-09-20T03:59:57.546
+Unexpected IOException with stream:  Ten of Spades
+
+# Created on 2018-09-20T03:59:57.576
+Unexpected IOException with stream:  Two of Diamonds
+
+# Created on 2018-09-20T03:59:57.581
+Unexpected IOException with stream:  Ace of Diamonds
+
+# Created on 2018-09-20T03:59:57.594
+Unexpected IOException with stream:  King of Diamonds
+
+# Created on 2018-09-20T03:59:57.598
+Unexpected IOException with stream:  Four of Diamonds
+
+# Created on 2018-09-20T03:59:57.603
+Unexpected IOException with stream:  Six of Diamonds
+
+# Created on 2018-09-20T03:59:57.614
+Unexpected IOException with stream:  Two of Hearts
+
+# Created on 2018-09-20T03:59:57.617
+Unexpected IOException with stream: .
+
+
+
+# Created on 2018-09-20T03:59:57.624
+Unexpected IOException with stream: Dealer has: 
+
+# Created on 2018-09-20T03:59:57.625
+Unexpected IOException with stream:  Queen of Spades
+
+# Created on 2018-09-20T03:59:57.627
+Unexpected IOException with stream:  King of Clubs
+
+# Created on 2018-09-20T03:59:57.636
+Unexpected IOException with stream: , and one face-down card.
+
+
+
+# Created on 2018-09-20T03:59:57.641
+Unexpected IOException: 6,1,blackjack.GameEndTest,testDisplayHand(blackjack.GameEndTest),null,null,null
+
+
+# Created on 2018-09-20T03:59:57.643
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,blackjack.GameEndTest,null,null,null
+
+
+# Created on 2018-09-20T03:59:57.650
+Unexpected IOException: 1,1,org.apache.maven.surefire.junit4.JUnit4Provider,blackjack.PlayerCommandsTest,null,null,null
+
+
+# Created on 2018-09-20T03:59:57.655
+Unexpected IOException: 5,1,junit.framework.TestSuite$1,warning(junit.framework.TestSuite$1),null,null,null
+
+
+# Created on 2018-09-20T03:59:57.660
+Unexpected IOException: 8,1,junit.framework.TestSuite$1,warning(junit.framework.TestSuite$1),null,No tests found in blackjack.PlayerCommandsTest,null,No tests found in blackjack.PlayerCommandsTest,TestSuite$1.warning No tests found in blackjack.PlayerCommandsTest,junit.framework.AssertionFailedError: No tests found in blackjack.PlayerCommandsTest\000A\0009at junit.framework.TestSuite$1.runTest(TestSuite.java:100)\000A
+
+
+# Created on 2018-09-20T03:59:57.666
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,blackjack.PlayerCommandsTest,null,null,null
+
+
