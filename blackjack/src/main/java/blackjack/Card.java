@@ -31,7 +31,7 @@ public class Card {
 
         if (this.rank >= 10) { 
             this.value = 10; 
-        } else { this.value = this.rank+1; }
+        } else { this.value = this.rank + 1; }
         
     }
 
@@ -42,9 +42,8 @@ public class Card {
 
         if (this.rank >= 10) { 
             this.value = 10; 
-        }
-        else { 
-            this.value = this.rank; 
+        } else { 
+            this.value = this.rank + 1; 
         }
 
     }

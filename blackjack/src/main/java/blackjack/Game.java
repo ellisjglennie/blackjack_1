@@ -1,6 +1,5 @@
 package blackjack;
 
-import java.util.*;
 
 
 /*Object: Game
@@ -30,10 +29,84 @@ public class Game {
     /*  run(ArrayList<String>): creates a game based on file input
         This game requires no user input or even the game's deck, just iterates through
         a serious a premade commands
-    */
-    public void run(ArrayList<String> input) { 
+    
+    public void run(ArrayList<String> input) {
+        boolean winner = false;
+        int pos;
+        int turn = 0;
+        players[0].setHand(new Card[] {
+            new Card(Character.toString(input.get(0).charAt(0)), Character.toString(input.get(0).charAt(1))),
+            new Card(Character.toString(input.get(1).charAt(0)), Character.toString(input.get(1).charAt(1)))
+        });
+        players[1].setHand(new Card[] {
+            new Card(Character.toString(input.get(2).charAt(0)), Character.toString(input.get(0).charAt(1))),
+            new Card(Character.toString(input.get(3).charAt(0)), Character.toString(input.get(1).charAt(1)))
+        });
+        pos = 4;
+
+        System.out.println("The game has begun.");
+        players[0].showHand();
+        players[1].showHand();
+
+        while (!winner) { //loop hitting/standing until someone wins!
+            winner = checkBJ(players);  //test for immediate blackjack
+
+            if (winner) { break; }      //break if game is already won
+
+            System.out.print("-----\n" + players[turn].getName() + "'s turn.\n"); //begin turn
+            //if user stands, their hand is revealed and the dealer has a chance to hit
+            if (turn == 0) {
+                if (input.get(pos).equals("S")) {
+                    System.out.println("User stands");
+                    pos++;
+                    players[turn].showHand();
+                    turn += 1;
+                } else {
+                    //every time the player chooses hit, their hand is revealed and tested for a bust
+                    System.out.println("User hits.");
+                    pos++;
+                    players[turn].add(new Card(Character.toString(input.get(pos).charAt(0)), 
+                                                Character.toString(input.get(pos).charAt(1)))); //draw card
+                    players[turn].showHand();
+                
+                }
+            }
+            else if (turn == 1) {
+                if (players[turn].standing()) {
+                    players[turn].showHand();
+                    turn += 1;
+                } else {
+                    //every time the player chooses hit, their hand is revealed and tested for a bust
+                    pos++;
+                    players[turn].add(new Card(Character.toString(input.get(pos).charAt(0)), 
+                                                Character.toString(input.get(pos).charAt(1)))); //draw card
+                    players[turn].showHand();
+                    
+                }
+                
+            
+            }
+            else if (turn == 2) {
+                winner = checkBJ(players);
+                if (!winner) {
+                    compareScore(players);
+                }
+                winner = true;
+            }
+
         
     }
+    
+}
+*/
+
+
+
+
+
+
+
+
 
 
     /*  run(): creates a game based on console input. This game requires
@@ -67,13 +140,14 @@ public class Game {
                 //every time the player chooses hit, their hand is revealed and tested for a bust
                 players[turn].draw(deck); //draw card
                 players[turn].showHand();
-                winner = checkBJ(players);
                 
             }
 
-            winner = checkBJ(players);
             if (turn == 2) {
-                compareScore(players);
+                winner = checkBJ(players);
+                if (!winner) {
+                    compareScore(players);
+                }
                 winner = true;
             }
 
@@ -97,7 +171,7 @@ public class Game {
             System.out.println("Dealer has a score of " + players[1].getHand() + " and busts. Player wins.");
             return true;
         } else if (players[1].getHand() == 21) {
-            System.out.println("Dealer has blacjack and wins.");
+            System.out.println("Dealer has blackjack and wins.");
             return true;
         }
         return false;
@@ -115,11 +189,6 @@ public class Game {
         }
 
     }
-
-
-
-
-
 
 
 }

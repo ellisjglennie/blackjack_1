@@ -12,6 +12,9 @@ public interface Player {
     
     //draw both at the beginning and throughout the game
     void draw(Deck deck);
+
+    //add a card manually
+    void add(Card c);
     
     //prints out the player's hand and returns to prove it worked
     int showHand();

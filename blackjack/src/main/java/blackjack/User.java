@@ -22,6 +22,12 @@ public class User implements Player {
         System.out.println("You drew a " + hand.get(hand.size()-1).toString() + ".");
     }
 
+    @Override
+    public void add(Card c) {
+        hand.add(c);
+        System.out.println("You drew a " + c.toString() + ".");
+    }
+
 
     //prints out the player's hand
     @Override

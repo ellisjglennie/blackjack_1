@@ -19,7 +19,13 @@ public class Dealer implements Player {
     @Override
     public void draw(Deck deck) {
         hand.add(deck.drawCard());
-        System.out.println("Dealer draws.");
+        System.out.println("Dealer drew a " + hand.get(hand.size()-1).toString() + ".");
+    }
+
+    @Override
+    public void add(Card c) {
+        hand.add(c);
+        System.out.println("Dealer drew a " + c.toString() + ".");
     }
 
 
@@ -27,10 +33,18 @@ public class Dealer implements Player {
     @Override
     public int showHand() {
         System.out.print("Dealer has: ");
-        for (int i=1; i<hand.size(); i++) { 
-            System.out.print(" " + hand.get(i).toString());
+        if (hand.size() == 2) {
+            for (int i=1; i<hand.size(); i++) { 
+                System.out.print(" " + hand.get(i).toString());
+            }
+            System.out.println(", and one face-down card.\n");
         }
-        System.out.println(", and one face-down card.\n");
+        else {
+            for (Card card : hand) { 
+                System.out.print(" " + card.toString());
+            }
+            System.out.println(".");
+        }
         return 0;
     }
 
@@ -54,6 +68,7 @@ public class Dealer implements Player {
             return true;
         }
      }
+
 
     //returns the total score of the player's hand
     @Override
