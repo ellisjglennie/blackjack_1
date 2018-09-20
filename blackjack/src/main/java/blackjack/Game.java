@@ -71,6 +71,12 @@ public class Game {
                 
             }
 
+            winner = checkBJ(players);
+            if (turn == 2) {
+                compareScore(players);
+                winner = true;
+            }
+
 
         }
 
@@ -94,9 +100,23 @@ public class Game {
             System.out.println("Dealer has blacjack and wins.");
             return true;
         }
-
         return false;
     }
+
+    public int compareScore(Player[] players) {
+        System.out.print("User has " + players[0].getHand() + " points and Dealer has " + players[1].getHand() + " points. ");
+        if (players[0].getHand() > players[1].getHand()) {
+            System.out.println("User wins!");
+            return 0;
+        }
+        else {
+            System.out.println("Dealer wins!");
+            return 1;
+        }
+
+    }
+
+
 
 
 
