@@ -22,6 +22,6 @@ public interface Player {
     int getHand();
 
     //purely for testing. sets new value to hand
-    void setHand(int min);
+    void setHand(Card[] c);
 
 }

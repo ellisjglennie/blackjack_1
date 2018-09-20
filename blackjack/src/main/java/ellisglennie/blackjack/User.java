@@ -8,7 +8,6 @@ public class User implements Player {
     private ArrayList<Card> hand = new ArrayList<>();
     protected static Scanner sc = new Scanner(System.in);
     private String name;
-    private int tst = 0;
 
     public String getName() { return name; }
 
@@ -61,16 +60,17 @@ public class User implements Player {
         for (Card card : hand) {
             total += card.getValue();
         }
-        total += tst;
         return total;
      }
 
 
      //this is purely a tester function that changes the value of a hand
      @Override
-     public void setHand(int min) {
-        tst = getHand() - min;
-                  
+     public void setHand(Card[] c) {
+        hand.clear();
+        for (int i=0; i<c.length; i++) {
+            hand.add(c[i]);
+        }          
      }
 
 }

@@ -56,9 +56,11 @@ public class Dealer implements Player {
      }
 
      @Override
-     public void setHand(int min) {
-         
-         
+     public void setHand(Card[] c) {
+        hand.clear();
+        for (int i=0; i<c.length; i++) {
+            hand.add(c[i]);
+        }          
      }
 
 
