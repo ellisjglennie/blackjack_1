@@ -6,9 +6,14 @@ import java.util.*;
 
 public class Dealer implements Player {
     private ArrayList<Card> hand = new ArrayList<>();
+    private String name;
+
+    public String getName() { return name; }
     
     // Player hand is an array
-    public Dealer() {  }
+    public Dealer() {  
+        this.name = "Dealer";
+    }
 
     //draw both at the beginning and throughout the game
     @Override
@@ -16,12 +21,7 @@ public class Dealer implements Player {
         hand.add(deck.drawCard());
         System.out.println("Dealer draws.");
     }
-    
-    //plays the player's turn
-    @Override
-    public void startTurn() {
-        System.out.println("------\nDealer's Turn.");
-    }
+
 
     //prints out the player's hand at the beginning of the game
     @Override
@@ -37,7 +37,13 @@ public class Dealer implements Player {
 
     //ask the player if they want to hit or stand, then returns a boolean
     @Override
-    public boolean standing() { return false; }
+    public boolean standing() {
+        if (getHand() <= 16) {
+            return false;
+        } else {
+            return true;
+        }
+     }
 
     //returns the total score of the player's hand
     @Override
@@ -47,6 +53,12 @@ public class Dealer implements Player {
             total += card.getValue();
         }
         return total;
+     }
+
+     @Override
+     public void setHand(int min) {
+         
+         
      }
 
 

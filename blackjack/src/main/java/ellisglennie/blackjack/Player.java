@@ -6,13 +6,12 @@ import java.util.*;
 public interface Player {
     Scanner sc = new Scanner(System.in);
 
+    //return name
+    String getName();
     
     //draw both at the beginning and throughout the game
     void draw(Deck deck);
     
-    //plays the player's turn
-    void startTurn();
-
     //prints out the player's hand and returns to prove it worked
     int showHand();
 
@@ -21,5 +20,8 @@ public interface Player {
 
     //returns the total score of the player's hand
     int getHand();
+
+    //purely for testing. sets new value to hand
+    void setHand(int min);
 
 }

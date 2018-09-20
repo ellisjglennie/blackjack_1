@@ -41,7 +41,7 @@ public class Game {
     */
     public void run() {
         int turn = 0;
-        int swap = -1;
+        boolean winner = false;
         //draws hands for user and dealer
         players[0].draw(deck);
         players[0].draw(deck);
@@ -52,10 +52,12 @@ public class Game {
         players[0].showHand();
         players[1].showHand();
 
-        while (true) {
-            //check for blackjack!
+        while (!winner) {
+            winner = checkBJ(players);
 
-            players[turn].startTurn();
+            if (winner) { break; }
+
+            System.out.print("-----\n" + players[turn].getName() + "'s turn.\n");
             if (players[turn].standing()) {
                 players[turn].showHand();
                 turn += 1;
@@ -63,22 +65,29 @@ public class Game {
                 System.out.println("Testing.");
                 players[turn].draw(deck);
                 players[turn].showHand();
+                winner = checkBJ(players);
+                
             }
 
 
         }
 
 
-
-    
-
     }
 
+    public boolean checkBJ(Player[] players) {
+        for (int i=0; i<players.length; i++) 
+        if (players[0].getHand() > 21) {
+            System.out.println("User has a score of " + players[0].getHand() + " and busts. Dealer wins.");
+            return true;
+        }
+        if (players[1].getHand() > 21) {
+            System.out.println("Dealer has a score of " + players[1].getHand() + " and busts. Player wins.");
+            return true;
+        }
 
- 
-
-
-
+        return false;
+    }
 
 
 

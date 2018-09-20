@@ -7,9 +7,14 @@ import java.util.*;
 public class User implements Player {
     private ArrayList<Card> hand = new ArrayList<>();
     protected static Scanner sc = new Scanner(System.in);
+    private String name;
+    private int tst = 0;
 
+    public String getName() { return name; }
 
-    public User() {    }
+    public User() { 
+        this.name = "User";
+    }
 
     @Override
     public void draw(Deck deck) { //draw a new card from the deck and announce it to the user
@@ -17,11 +22,6 @@ public class User implements Player {
         System.out.println("You drew a " + hand.get(hand.size()-1).toString() + ".");
     }
 
-    //plays the player's turn
-    @Override
-    public void startTurn() {
-        System.out.println("------\nYour turn.");
-    }
 
     //prints out the player's hand
     @Override
@@ -61,7 +61,16 @@ public class User implements Player {
         for (Card card : hand) {
             total += card.getValue();
         }
+        total += tst;
         return total;
+     }
+
+
+     //this is purely a tester function that changes the value of a hand
+     @Override
+     public void setHand(int min) {
+        tst = getHand() - min;
+                  
      }
 
 }
