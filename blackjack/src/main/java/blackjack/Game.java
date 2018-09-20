@@ -1,6 +1,7 @@
 package blackjack;
 
 
+import java.util.*;
 
 /*Object: Game
     Purpose: Runs the interface and does the math for a game of blackjack.
@@ -28,9 +29,10 @@ public class Game {
 
     /*  run(ArrayList<String>): creates a game based on file input
         This game requires no user input or even the game's deck, just iterates through
-        a serious a premade commands
+        a serious a premade commands*/
     
     public void run(ArrayList<String> input) {
+        /*
         boolean winner = false;
         int pos;
         int turn = 0;
@@ -96,9 +98,9 @@ public class Game {
 
         
     }
-    
+    */
 }
-*/
+
 
 
 

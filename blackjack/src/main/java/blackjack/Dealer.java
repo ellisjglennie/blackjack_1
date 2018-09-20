@@ -7,25 +7,27 @@ import java.util.*;
 public class Dealer implements Player {
     private ArrayList<Card> hand = new ArrayList<>();
     private String name;
+    private int firstShow;
 
     public String getName() { return name; }
     
     // Player hand is an array
     public Dealer() {  
         this.name = "Dealer";
+        firstShow = 0;
     }
 
     //draw both at the beginning and throughout the game
     @Override
     public void draw(Deck deck) {
         hand.add(deck.drawCard());
-        System.out.println("Dealer drew a " + hand.get(hand.size()-1).toString() + ".");
+        System.out.println("Dealer draws.");
     }
 
     @Override
     public void add(Card c) {
         hand.add(c);
-        System.out.println("Dealer drew a " + c.toString() + ".");
+        System.out.println("Dealer draws.");
     }
 
 
@@ -33,11 +35,12 @@ public class Dealer implements Player {
     @Override
     public int showHand() {
         System.out.print("Dealer has: ");
-        if (hand.size() == 2) {
+        if (this.firstShow == 0) {
             for (int i=1; i<hand.size(); i++) { 
                 System.out.print(" " + hand.get(i).toString());
             }
             System.out.println(", and one face-down card.\n");
+            this.firstShow = -1;
         }
         else {
             for (Card card : hand) { 
