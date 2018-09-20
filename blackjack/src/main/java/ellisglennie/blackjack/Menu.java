@@ -53,6 +53,7 @@ public class Menu {
         }
     }
 
+    //Read the file's 
     public static ArrayList<String> getGameContent(String fileName) {
         try {
             fileName = new String(Files.readAllBytes(Paths.get(fileName)));
@@ -69,9 +70,10 @@ public class Menu {
         }
     }
 
+    //checks that the file input makes valid input for a game
     public static boolean isValid(ArrayList<String> c) {
         for (String item : c) {
-            if (item.length() == 3) {
+            if (item.length() == 3) { //the only 3-character string allowed is a 10-rank card
                 Card thisCard = new Card(Character.toString(item.charAt(0)), item.substring(-2));
                 if (thisCard.getRank() == -1 || thisCard.getSuit() == -1) {
                     return false;
@@ -93,7 +95,7 @@ public class Menu {
         return true;
     }
 
-    public static boolean validGameType(String t) {
+    public static boolean validGameType(String t) { //make sure the game type entered is either file or console
         if (t.equals("c") || t.equals("f")) {
             return true;
         }
