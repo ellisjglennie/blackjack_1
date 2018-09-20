@@ -49,7 +49,11 @@ public class Game {
         System.out.println("The game has begun.");
         players[0].showHand();
         players[1].showHand();
+
+    
+
     }
+
 
 
 
