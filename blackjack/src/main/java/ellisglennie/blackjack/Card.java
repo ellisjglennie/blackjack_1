@@ -14,7 +14,7 @@ public class Card {
     public int getValue() { return value; }
 
 
-    Card(String suit, String rank) {
+    public Card(String suit, String rank) {
 
         this.rank = -1;
         this.suit = -1;
@@ -31,7 +31,7 @@ public class Card {
         
     }
 
-    Card(int suit, int rank) {
+    public Card(int suit, int rank) {
         
         this.suit = suit;
         this.rank = rank;

@@ -2,7 +2,6 @@ package ellisglennie.blackjack;
 
 
 import junit.framework.TestCase;
-import java.util.*;
 
 
 
@@ -19,7 +18,6 @@ public class AcceptsConsoleInputTest extends TestCase {
         assertTrue(Menu.validGameType("c"));
 
     }
-
 
 
 }

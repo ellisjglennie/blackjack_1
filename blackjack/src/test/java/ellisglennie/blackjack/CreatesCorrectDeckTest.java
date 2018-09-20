@@ -14,12 +14,12 @@ public class CreatesCorrectDeckTest extends TestCase {
     }
 
     public void testDeckIsShuffled() {
-        Deck deck1 = new Deck();
         Deck deck2 = new Deck();
-        deck1.shuffle();
+        Deck deck3 = new Deck();
         deck2.shuffle();
+        deck3.shuffle();
         
-        assertFalse(deck1.getCards().equals(deck2.getCards()));
+        assertFalse(deck2.getCards().equals(deck3.getCards()));
 
 
     }

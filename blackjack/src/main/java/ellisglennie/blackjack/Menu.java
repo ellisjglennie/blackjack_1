@@ -7,23 +7,29 @@ import java.io.*;
 
 
 public class Menu {
+    //protected static Game game = new Game;
     protected static Scanner sc = new Scanner(System.in);
     protected static ArrayList<String> input = new ArrayList<>();
     protected static String mode = "";
 
     public static void main(String[] args) {
 		
-        System.out.print("Welcome to Blackjack. /n Select file input (f) or console input (c): ");
-
-        System.out.print("Enter the name of a .txt file in your current folder: ");
-
+        System.out.print("Welcome to Blackjack. \n\n\n");
         
-        input = getCards();
-        
+        while (!validGameType(mode)) {
+            System.out.print("Select file input (f) or console input (c):  ");
+            mode = sc.nextLine();
+        }
 
-		
+        /*if (mode.equals("f")) {
+            System.out.print("Enter the name of a .txt file in your current folder: ");
+            input = getCards();
+            game.run(mode, input);
+        } else {
+            game.run(mode);
+        }*/
 
-
+	
 
     }
 
@@ -85,6 +91,13 @@ public class Menu {
             }
         }
         return true;
+    }
+
+    public static boolean validGameType(String t) {
+        if (t.equals("c") || t.equals("f")) {
+            return true;
+        }
+        return false;
     }
 
 
