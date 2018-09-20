@@ -7,35 +7,35 @@ import java.io.*;
 
 
 public class Menu {
-    //protected static Game game = new Game;
-    protected static Scanner sc = new Scanner(System.in);
-    protected static ArrayList<String> input = new ArrayList<>();
-    protected static String mode = "";
+    protected static Game game = new Game();                        //game interface and program
+    protected static Scanner sc = new Scanner(System.in);           //scanner
+    protected static ArrayList<String> input = new ArrayList<>();   //for file reading
+    protected static String mode = "";                              //for determining game type
 
     public static void main(String[] args) {
 		
         System.out.print("Welcome to Blackjack. \n\n\n");
         
         while (!validGameType(mode)) {
-            System.out.print("Select file input (f) or console input (c):  ");
+            System.out.print("Select file input (f) or console input (c):  "); //select game type
             mode = sc.nextLine();
         }
 
-        /*if (mode.equals("f")) {
+        if (mode.equals("f")) {
             System.out.print("Enter the name of a .txt file in your current folder: ");
             input = getCards();
-            game.run(mode, input);
+            game.run(input); //file input game
         } else {
-            game.run(mode);
-        }*/
-
-	
+            game.run(); //console game
+        }
 
     }
 
 
 	
-
+    /*getCards(): returns a full ArrayList of all cards and commands from a file
+        
+    */
     public static ArrayList<String> getCards() { //tests if a file was provided and if it is .txt
         String f = "";
         ArrayList<String> c = new ArrayList<>();

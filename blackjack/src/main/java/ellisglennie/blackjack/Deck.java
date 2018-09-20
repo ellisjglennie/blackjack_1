@@ -24,6 +24,12 @@ public class Deck {
         Collections.shuffle(this.cards);
     }
 
+    public Card drawCard() {
+        Card top = cards.get(0);
+        cards.remove(0);
+        return top;
+    }
+
 
 
 }
