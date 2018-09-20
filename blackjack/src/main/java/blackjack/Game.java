@@ -48,22 +48,24 @@ public class Game {
         players[1].draw(deck);
         players[1].draw(deck);
 
+        //begins the game
         System.out.println("The game has begun.");
         players[0].showHand();
         players[1].showHand();
 
-        while (!winner) {
-            winner = checkBJ(players);
+        while (!winner) { //loop hitting/standing until someone wins!
+            winner = checkBJ(players);  //test for immediate blackjack
 
-            if (winner) { break; }
+            if (winner) { break; }      //break if game is already won
 
-            System.out.print("-----\n" + players[turn].getName() + "'s turn.\n");
+            System.out.print("-----\n" + players[turn].getName() + "'s turn.\n"); //begin turn
+            //if user stands, their hand is revealed and the dealer has a chance to hit
             if (players[turn].standing()) {
                 players[turn].showHand();
                 turn += 1;
             } else {
-                System.out.println("Testing.");
-                players[turn].draw(deck);
+                //every time the player chooses hit, their hand is revealed and tested for a bust
+                players[turn].draw(deck); //draw card
                 players[turn].showHand();
                 winner = checkBJ(players);
                 
@@ -79,9 +81,17 @@ public class Game {
         if (players[0].getHand() > 21) {
             System.out.println("User has a score of " + players[0].getHand() + " and busts. Dealer wins.");
             return true;
+        } else if (players[0].getHand() == 21) {
+            if (players[1].getHand() != 21) {
+                System.out.println("User has blackjack and Dealer does not. User wins.");
+                return true;
+            }
         }
         if (players[1].getHand() > 21) {
             System.out.println("Dealer has a score of " + players[1].getHand() + " and busts. Player wins.");
+            return true;
+        } else if (players[1].getHand() == 21) {
+            System.out.println("Dealer has blacjack and wins.");
             return true;
         }
 
