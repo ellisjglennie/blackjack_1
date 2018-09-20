@@ -1,7 +1,6 @@
 package ellisglennie.blackjack;
 
 import junit.framework.TestCase;
-import java.util.*;
 
 
 public class CreatesCorrectDeck extends TestCase {
